@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+    <script>
+
+        let soNam = prompt(`Nhập số nam: `);
+        soNam = Number(soNam);
+        console.log(soNam);
+
+        let soNu = prompt("Nhập số nữ: ");
+        soNu = Number(soNu);
+        console.log(soNu);
+
+        let phanTramSoNam = Math.round ((soNam/(soNam + soNu) * 100));
+        alert("Phần trăm số nam trên tổng là " + phanTramSoNam + " phần trăm % ");
+        alert(`Phần trăm số nam trên tổng là ${ phanTramSoNam} phần trăm % `);
+        console.log(phanTramSoNam);
+
+        let phanTramSoNu = Math.round( 10 * (soNu / ( soNam + soNu )));
+        alert("Phần trăm số nữ trên tổng là " + phanTramSoNu + " phần trăm % ");
+        alert(`Phần trăm số nữ trên tổng là ${phanTramSoNu} phần trăm % `);
+        console.log(phanTramSoNu);
+
+
+    </script>
+
+</html>
